@@ -1,0 +1,307 @@
+/* Ställer in grundläggande stilar för html och body */
+html, body {
+    /* Layout */
+    height: 100%; /* Gör att body tar upp hela höjden på sidan */
+    margin: 0; /* Ta bort standardmarginaler */
+    padding: 0; /* Ta bort standardpadding */
+    box-sizing: border-box; /* Inkludera padding och border i elementets totala bredd och höjd */
+}
+
+/* Huvudramen */
+.main-frame {
+    /* Text */
+    font-family: 'Courier New', Courier, monospace; /* Ställer in typsnittet */
+
+    /* Layout */
+    border: dotted 1px black; /* Sätter en prickad ram */
+    background-color: lightgoldenrodyellow; /* Sätter bakgrundsfärg */
+    padding: 20px; /* Lägger till padding */
+    box-sizing: border-box; /* Inkludera padding och border i elementets totala bredd och höjd */
+
+    /* Position */
+    justify-content: center; /* Centrera innehåll horisontellt */
+    align-items: center; /* Centrera innehåll vertikalt */
+    text-align: center; /* Centrera text */
+}
+
+/* Titeln */
+#bmi-title {
+    /* Text */
+    font-size: x-large; /* Ställer in textstorlek */
+    font-weight: bold; /* Gör texten fet */
+    font-family: sans-serif; /* Ställer in typsnitt */
+    color: green; /* Sätter textfärg */
+
+    /* Position */
+    margin-bottom: 20px; /* Lägger till marginal under titeln */
+}
+
+/* BMI-ramen */
+#bmi-frame {
+    /* Layout */
+    height: 1000px; /* Ställer in höjd */
+    max-height: fit-content; /* Sätter maxhöjd */
+    width: 550px; /* Ställer in bredd */
+    border: dotted 3px; /* Sätter en prickad ram */
+    background-color: rgb(113, 189, 113); /* Sätter bakgrundsfärg */
+
+    /* Position */
+    margin: 0% auto; /* Centrera horisontellt */
+    display: flex; /* Använder flexbox för layout */
+    flex-direction: column; /* Ställer in flex-riktning till kolumn */
+    justify-content: center; /* Centrera innehåll horisontellt */
+    align-items: center; /* Centrera innehåll vertikalt */
+    text-align: center; /* Centrera text */
+}
+
+/* BMI-formuläret */
+#bmi-form {
+    /* Layout */
+    width: 400px; /* Ställer in bredd */
+    margin: 10px; /* Lägger till marginal */
+    padding: 20px; /* Lägger till padding */
+    border: solid 1px; /* Sätter en solid ram */
+    background-color: lightgreen; /* Sätter bakgrundsfärg */
+    display: flex; /* Använder flexbox för layout */
+    flex-direction: column; /* Ställer in flex-riktning till kolumn */
+    gap: 20px; /* Lägger till mellanrum mellan flex-objekt */
+    align-items: center; /* Centrera innehåll horisontellt */
+}
+
+/* Enhetsetiketter */
+#unit-1, #unit-2 {
+    /* Layout */
+    width: 10px; /* Ställer in bredd */
+
+    /* Position */
+    text-align: left; /* Justerar texten till vänster */
+}
+
+/* BMI-värden */
+#bmi-values {
+    /* Layout */
+    margin: 10px auto; /* Centrera horisontellt och lägg till marginal */
+    padding: 20px; /* Lägger till padding */
+    border: solid 3px; /* Sätter en solid ram */
+    background-color: lightblue; /* Sätter bakgrundsfärg */
+    max-width: 1500px; /* Sätter maxbredd */
+
+    /* Position */
+    text-align: center; /* Centrera text */
+}
+
+/* Saved Values-rubriken */
+#saved-v {
+    /* Position */
+    margin-top: auto; /* Lägger till automatisk toppmarginal */
+}
+
+/* Listan inom BMI-värden */
+#bmi-values ul {
+    /* Layout */
+    list-style-type: none; /* Ta bort standard list-stil */
+    padding: 0; /* Ta bort padding */
+    margin: 0; /* Ta bort marginal */
+
+    /* Position */
+    text-align: center; /* Centrera text */
+}
+
+/* Knappen med "x"-symbolen */
+#bmi-values button {
+    /* Layout */
+    background-color: transparent; /* Gör bakgrunden transparent */
+    border: none; /* Ta bort standardgränsen */
+    padding: 3px 5px; /* Lägger till padding */
+    cursor: pointer; /* Ändra muspekaren till en pekare */
+    font-size: 1.2em; /* Gör "x"-symbolen större */
+    transition: color 0.3s; /* Lägg till en övergångseffekt */
+
+    /* Text */
+    color: red; /* Sätter textfärg röd på 'ta bort'-knappen */
+}
+
+/* Metric och Imperial div */
+#metric-div, #imperial-div {
+    /* Layout */
+    background-color: lightcyan; /* Sätter bakgrundsfärg */
+    padding: 20px; /* Lägger till padding */
+    margin: 20px auto; /* Lägg till margin och centrera horisontellt */
+    border-radius: 10px; /* Lägg till rundade hörn */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lägg till en skugga */
+    max-width: 700px; /* Sätt en maxbredd */
+    display: flex; /* Använder flexbox för layout */
+    flex-direction: column; /* Ställer in flex-riktning till kolumn */
+    align-items: center; /* Centrera innehåll horisontellt */
+    justify-content: center; /* Centrera innehåll vertikalt */
+}
+
+
+
+/* Listor inom Metric och Imperial div */
+#metric-div ul, #imperial-div ul {
+    /* Layout */
+    list-style-type: none; /* Ta bort standard list-stil */
+    padding: 0; /* Ta bort padding */
+    margin: 0; /* Ta bort marginal */
+    width: 100%; /* Sätter bredd till 100% */
+}
+
+/* Listobjekt inom Metric och Imperial div */
+#metric-div li, #imperial-div li {
+    /* Layout */
+    background-color: rgb(144, 174, 238); /* Sätter bakgrundsfärg */
+    margin: 10px 0; /* Lägger till vertikal marginal */
+    padding: 10px; /* Lägger till padding */
+    border-radius: 5px; /* Lägg till rundade hörn */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lägg till en skugga */
+    display: flex; /* Använder flexbox för layout */
+    justify-content: space-between; /* Fördela innehållet jämnt */
+    align-items: center; /* Centrera innehåll vertikalt */
+}
+
+/* Imperial div specifik stil */
+#imperial-div li {
+    /* Layout */
+    background-color: lightcoral; /* Sätter bakgrundsfärg */
+}
+
+/* Knapp inom Metric och Imperial div */
+#metric-div button, #imperial-div button {
+    /* Layout */
+    background-color: transparent; /* Gör bakgrunden transparent */
+    border: none; /* Ta bort standardgränsen */
+    padding: 3px 5px; /* Lägger till padding */
+    cursor: pointer; /* Ändra muspekaren till en pekare */
+    font-size: 1.2em; /* Gör "x"-symbolen större */
+    transition: color 0.3s; /* Lägg till en övergångseffekt */
+
+    /* Text */
+    color: red; /* Sätter textfärg */
+}
+
+/* Knappens hover-effekt inom Metric och Imperial div */
+#metric-div button:hover, #imperial-div button:hover {
+    /* Text */
+    color: darkred; /* Ändra färgen vid hovring */
+}
+
+/* Knappen för att växla mellan enhetssystem */
+#toggle-units, #submit-btn {
+    /* Layout */
+    background-color: green; /* Sätter bakgrundsfärg */
+    border: none; /* Ta bort standardgränsen */
+    padding: 10px 20px; /* Lägg till padding för att göra knappen större */
+    cursor: pointer; /* Ändra muspekaren till en pekare */
+    margin-bottom: 20px; /* Lägger till bottenmarginal */
+    width: 200px; /* Sätter bredd */
+    margin: 10px; /* Lägger till marginal */
+    border-radius: 5px; /* Lägg till rundade hörn */
+    transition: background-color 0.3s, color 0.3s; /* Lägg till övergångseffekter */
+
+    /* Text */
+    color: yellowgreen; /* Sätter textfärg */
+    font-size: 1em; /* Justera textstorleken */
+}
+
+/* Knappens hover-effekt för att växla mellan enhetssystem */
+#toggle-units:hover, #submit-btn:hover {
+    /* Layout */
+    background-color: darkgreen; /* Ändra bakgrundsfärgen vid hovring */
+
+    /* Text */
+    color: lightyellow; /* Ändra textfärgen vid hovring */
+}
+
+/* Längd- och vikt-ramar */
+#length-frame, #weight-frame {
+    /* Layout */
+    display: flex; /* Använder flexbox för layout */
+    justify-content: center; /* Centrera innehåll horisontellt */
+    align-items: center; /* Centrera innehåll vertikalt */
+    width: 100%; /* Sätter bredd till 100% */
+    height: 20px; /* Sätter höjd */
+    gap: 10px; /* Lägger till mellanrum mellan flex-objekt */
+}
+
+/* Värden */
+#values {
+    /* Layout */
+    display: flex; /* Använder flexbox för layout */
+    justify-content: center; /* Centrera listorna horisontellt */
+    gap: 20px; /* Lägg till ett mellanrum mellan listorna */
+}
+
+/* Listor inom värden */
+#values ul {
+    /* Layout */
+    list-style-type: none; /* Ta bort standard list-stil */
+    padding: 0; /* Ta bort padding */
+    margin: 0; /* Ta bort marginal */
+}
+
+/* Listobjekt inom värden */
+#values li {
+    /* Layout */
+    margin: 20px; /* Lägger till marginal */
+}
+
+/* Metric värden */
+#metric-values {
+    /* Layout */
+    background-color: lightcyan; /* Sätter bakgrundsfärg */
+    justify-items: center; /* Centrera innehåll horisontellt */
+    align-items: center; /* Centrera innehåll vertikalt */
+    height: auto; /* Sätter höjd till auto */
+}
+
+/* Listobjekt inom Metric värden */
+#metric-values li {
+    /* Layout */
+    background-color: lightgreen; /* Sätter bakgrundsfärg */
+    margin: 10px; /* Lägger till marginal */
+}
+
+/* Imperial värden */
+#imperial-values {
+    /* Layout */
+    background-color: lightcyan; /* Sätter bakgrundsfärg */
+    justify-items: center; /* Centrera innehåll horisontellt */
+    align-items: center; /* Centrera innehåll vertikalt */
+    width: 500px; /* Sätter bredd */
+}
+
+/* Listobjekt inom Imperial värden */
+#imperial-values li {
+    /* Layout */
+    background-color: lightcoral; /* Sätter bakgrundsfärg */
+    margin: 10px; /* Lägger till marginal */
+}
+
+/* Metric klass */
+.metric {
+    /* Layout */
+    width: 200px; /* Sätter bredd */
+    margin: 5px 0; /* Lägger till vertikal marginal */
+    padding: 5px; /* Lägger till padding */
+    border: solid 1px black; /* Sätter en solid ram */
+    background-color: lightgreen; /* Sätter bakgrundsfärg */
+    display: flex; /* Använder flexbox för layout */
+    justify-content: center; /* Centrera innehåll horisontellt */
+    align-items: center; /* Centrera innehåll vertikalt */
+    text-align: center; /* Centrera text */
+}
+
+/* Imperial klass */
+.imperial {
+    /* Layout */
+    width: 200px; /* Sätter bredd */
+    margin: 5px 0; /* Lägger till vertikal marginal */
+    padding: 5px; /* Lägger till padding */
+    border: solid 1px black; /* Sätter en solid ram */
+    background-color: lightcoral; /* Sätter bakgrundsfärg */
+    display: flex; /* Använder flexbox för layout */
+    justify-content: center; /* Centrera innehåll horisontellt */
+    align-items: center; /* Centrera innehåll vertikalt */
+    text-align: center; /* Centrera text */
+}
