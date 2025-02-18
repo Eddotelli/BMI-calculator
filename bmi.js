@@ -9,9 +9,6 @@ let u1 = document.getElementById('unit-1');
 let u2 = document.getElementById('unit-2');
 
 let isMetric = true; // Håller koll på vilket enhetssystem som används
-// Hej git
-// Hej git
-// Hej git
 
 // Lägger till en eventlyssnare på knappen för att växla mellan enhetssystem
 toggleUnitsBtn.addEventListener('click', () => {
